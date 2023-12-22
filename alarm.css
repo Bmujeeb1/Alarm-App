@@ -1,0 +1,98 @@
+*{
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.fa-bell{
+    font-size: 80px;
+}
+body, .wrapper,.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+body{
+    min-height: 100vh;
+    background: #161f2e;
+}
+.wrapper{
+    width: 440px;
+    background: none;
+    color: cyan;
+    padding: 30px 30px 38px;
+    flex-direction: column;
+    border-radius: 0 50px;
+    box-shadow: 0 0 20px cyan;
+
+}
+.wrapper h1{
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0;
+}
+.wrapper .content{
+    width: 100%;
+    justify-content: space-between;
+}
+.wrapper .content.disable{
+    opacity: 0.6;
+    pointer-events: none;
+}
+.content .col{
+    border-radius: 5px;
+    border: 1px solid #999;
+    padding: 0 10px;
+    width: calc(100% / 3 - 5px);
+}
+.col select{
+    outline: none;
+    border: none;
+    height: 53px;
+    width: 100%;
+    font-size: 19px;
+}
+.wrapper button{
+    width: 100%;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    margin-top: 20px;
+    font-size: 20px;
+    padding: 17px 0;
+    border-radius: 5px;
+    background: #00ff22;
+    background: cyan;
+        color: #161f2e;
+}
+.wrapper button:hover{
+    box-shadow: 0 0 10px cyan;
+    background: #161f2e;
+    color: cyan;
+}
+
+@media screen and (max-width:375px) {
+    body{
+        background: #161f2e;
+    }
+    .wrapper{
+        width: 300px;
+        background: none;
+        color: cyan ;
+    }
+    .wrapper button{
+        background: cyan;
+        color: #161f2e;
+    }
+    select{
+        background: #161f2e;
+        color: cyan;
+    }
+    .col select {
+        font-size: 15px;
+    }
+    p{
+        margin-top: 20px !important;
+    }
+
+}
